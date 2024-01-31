@@ -1,6 +1,6 @@
 import streamlit as st
-from src.utils import *
-from src.vertex import *
+from utils import *
+from vertex import *
 
 st.set_page_config(
     page_title="Vertex PaLM Text Generation API",
