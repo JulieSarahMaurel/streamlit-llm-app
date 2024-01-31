@@ -1,6 +1,7 @@
 import streamlit as st
-from utils import *
-from vertex import *
+
+import utils
+import vertex
 
 st.set_page_config(
     page_title="Vertex PaLM Text Generation API",
@@ -13,7 +14,7 @@ st.set_page_config(
 )
 
 #creating session states
-create_session_state()
+utils.create_session_state()
 
 
 st.title(":red[PaLM 2] :blue[Vertex AI] Text Generation")
@@ -41,7 +42,7 @@ with st.sidebar:
     st.session_state['top_p'] = top_p_value
 
     if st.button("Reset Session"):
-        reset_session()
+        utils.reset_session()
 
 
 
@@ -59,7 +60,7 @@ with st.container():
         st.session_state['prompt'].append(prompt)
         st.markdown("<h3 style='text-align: center; color: blue;'>Generator Model Response</h3>", unsafe_allow_html=True)
         with st.spinner('PaLM is working to generate, wait.....'):
-            response = get_text_generation(prompt=prompt, temperature = st.session_state['temperature'],
+            response = vertex.get_text_generation(prompt=prompt, temperature = st.session_state['temperature'],
                                 max_output_tokens = st.session_state['token_limit'],
                                 top_p = st.session_state['top_p'],
                                 top_k = st.session_state['top_k'])
