@@ -1,5 +1,4 @@
 import streamlit as st
-from PIL import Image
 from src.utils import *
 from src.vertex import *
 
@@ -17,12 +16,9 @@ st.set_page_config(
 create_session_state()
 
 
-
-st.image(image)
 st.title(":red[PaLM 2] :blue[Vertex AI] Text Generation")
 
 with st.sidebar:
-    st.image(image)
     st.markdown("<h2 style='text-align: center; color: red;'>Setting Tab</h2>", unsafe_allow_html=True)
 
 
