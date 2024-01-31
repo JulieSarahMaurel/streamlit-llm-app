@@ -4,7 +4,7 @@ import utils
 import vertex
 
 st.set_page_config(
-    page_title="Vertex PaLM Text Generation API",
+    page_title="Vertex PaLM Text Generation I changed this!",
     page_icon=":robot:",
     layout="centered",
     initial_sidebar_state="expanded",
