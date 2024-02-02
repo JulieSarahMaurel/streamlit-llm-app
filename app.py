@@ -17,32 +17,7 @@ st.set_page_config(
 utils.create_session_state()
 
 
-st.title(":red[PaLM 2] :blue[Rapha-Stephane-Julie] Contract Liability Predictor")
-
-with st.sidebar:
-    st.markdown("<h2 style='text-align: center; color: pink;'>Setting Tab</h2>", unsafe_allow_html=True)
-
-
-    st.write("Model Settings:")
-
-    #define the temeperature for the model
-    temperature_value = st.slider('Temperature :', 0.0, 1.0, 0.2)
-    st.session_state['temperature'] = temperature_value
-
-    #define the temeperature for the model
-    token_limit_value = st.slider('Token limit :', 1, 1024, 256)
-    st.session_state['token_limit'] = token_limit_value
-
-    #define the temeperature for the model
-    top_k_value = st.slider('Top-K  :', 1,40,40)
-    st.session_state['top_k'] = top_k_value
-
-    #define the temeperature for the model
-    top_p_value = st.slider('Top-P :', 0.0, 1.0, 0.8)
-    st.session_state['top_p'] = top_p_value
-
-    if st.button("Reset Session"):
-        utils.reset_session()
+st.title(":pink[PaLM 2 fine tuned] :pink[Rafa-Stephane-Julie] Contract Liability Predictor")
 
 
 
@@ -56,6 +31,16 @@ with st.container():
 
 
     prompt = st.text_area("Add your prompt: ",height = 100)
+    
+###trial julie
+
+
+#####
+    
+    
+    
+
+    
     if prompt:
         st.session_state['prompt'].append(prompt)
         st.markdown("<h3 style='text-align: center; color: blue;'>Generator Model Response</h3>", unsafe_allow_html=True)
