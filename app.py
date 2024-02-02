@@ -18,7 +18,7 @@ st.set_page_config(
 utils.create_session_state()
 
 
-st.title(":purple[PaLM 2 fine tuned] :purple[Rafa-Stephane-Julie] st.title Contract Liability Predictor")
+st.title(":blue[PaLM 2 fine tuned] :blue[Rafa-Stephane-Julie] Contract Liability Predictor")
 
 
 
