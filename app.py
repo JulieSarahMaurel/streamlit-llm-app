@@ -18,8 +18,8 @@ st.set_page_config(
 utils.create_session_state()
 
 
-st.title(":blue[PaLM 2 fine tuned] :blue :sparkles: The most powerful tool to find Liability in your contracts :sparkles: ")
-st.title("Powered by Rafa-Stephane-Julie")
+st.title(":blue[PaLM 2 fine tuned]:sparkles: The most powerful tool to find Liability in your contracts :sparkles: ")
+st.title(":blue [Powered by Rafa-Stephane-Julie]")
  
 
 
