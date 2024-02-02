@@ -5,7 +5,7 @@ import utils
 import vertex
 
 st.set_page_config(
-    page_title="Contract liability predictor",
+    page_title=":sparkles: Contract liability predictor :sparkles:",
     page_icon=":robot:",
     layout="centered",
     initial_sidebar_state="expanded",
@@ -22,13 +22,13 @@ st.title(":blue[PaLM 2 fine tuned] :blue[Rafa-Stephane-Julie] Contract Liability
 
 
 
-with st.container():
-    st.write("Current Generator Settings: ")
+#with st.container():
+    #st.write("Current Generator Settings: ")
     # if st.session_state['temperature'] or st.session_state['debug_mode'] or :
-    st.write ("Temperature: ",st.session_state['temperature']," \t \t Token limit: ",st.session_state['token_limit']
-                ," \t \t Top-K: ",st.session_state['top_k']
-                ," \t \t Top-P: ",st.session_state['top_p']
-                ," \t \t Debug Model: ",st.session_state['debug_mode'])
+    #st.write ("Temperature: ",st.session_state['temperature']," \t \t Token limit: #",st.session_state['token_limit']
+                #," \t \t Top-K: ",st.session_state['top_k']
+                #," \t \t Top-P: ",st.session_state['top_p']
+                #," \t \t Debug Model: ",st.session_state['debug_mode'])
 
 
     #prompt = st.text_area("Add your prompt: ",height = 100)
