@@ -17,10 +17,10 @@ st.set_page_config(
 utils.create_session_state()
 
 
-st.title(":red[PaLM 2] :blue[Vertex AI] Text Generation")
+st.title(":red[PaLM 2] :blue[Rapha-Stephane-Julie] Contract Liability Predictor")
 
 with st.sidebar:
-    st.markdown("<h2 style='text-align: center; color: red;'>Setting Tab</h2>", unsafe_allow_html=True)
+    st.markdown("<h2 style='text-align: center; color: pink;'>Setting Tab</h2>", unsafe_allow_html=True)
 
 
     st.write("Model Settings:")
