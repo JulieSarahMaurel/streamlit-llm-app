@@ -18,7 +18,7 @@ st.set_page_config(
 utils.create_session_state()
 
 
-st.title(":pink[PaLM 2 fine tuned] :pink[Rafa-Stephane-Julie] Contract Liability Predictor")
+st.title(":purple[PaLM 2 fine tuned] :purple[Rafa-Stephane-Julie] st.title Contract Liability Predictor")
 
 
 
@@ -72,7 +72,7 @@ if uploaded_file is not None:
     if document_text :
         #st.session_state['prompt'].append(prompt)
         st.markdown("<h3 style='text-align: center; color: blue;'>Generator Model Response</h3>", unsafe_allow_html=True)
-        with st.spinner('PaLM is working to generate, wait.....'):
+        with st.spinner('DMZ Brain is working to generate, wait.....'):
             response = vertex.get_text_generation(prompt=document_text)
             #response = vertex.get_text_generation(prompt=prompt, temperature = st.session_state['temperature'],)
             st.session_state['response'].append(response)
