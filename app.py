@@ -4,12 +4,12 @@ import utils
 import vertex
 
 st.set_page_config(
-    page_title="Vertex PaLM Text Generation!",
+    page_title="Contract liability predictor",
     page_icon=":robot:",
     layout="centered",
     initial_sidebar_state="expanded",
     menu_items={
-        'About': "# This app shows you how to use Vertex PaLM Text Generator API"
+        'About': "# You will discover by yourself"
     }
 )
 
