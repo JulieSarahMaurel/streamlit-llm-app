@@ -17,3 +17,8 @@ def get_text_generation(prompt="",  **parameters):
     generation_model = get_model()
     response = generation_model.predict(prompt=prompt, **parameters)
     return response.text
+
+#def get_evaluation(prompt="",  **parameters):
+    #generation_model = get_model()
+    #response = generation_model.predict(prompt=prompt, **parameters)
+    #return response.text

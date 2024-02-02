@@ -22,7 +22,10 @@ st.title(":blue[PaLM 2 fine tuned] :blue[Rafa-Stephane-Julie] Contract Liability
 
 
 
-#with st.container():
+with st.container():
+    st.write("Training database: CUAD ")
+    st.write("Training set size: 492")
+    st.write("Blue and Rouge indicators:0.009235160038433818, 0.24705357752657664")
     #st.write("Current Generator Settings: ")
     # if st.session_state['temperature'] or st.session_state['debug_mode'] or :
     #st.write ("Temperature: ",st.session_state['temperature']," \t \t Token limit: #",st.session_state['token_limit']
@@ -68,7 +71,7 @@ uploaded_file = st.file_uploader("Please upload your DOCX file here", type="docx
 if uploaded_file is not None:
     document_text = read_docx_and_save(uploaded_file)
     document_text="Given the following contract text, extract uncapped contract liabilities: "+ document_text
-#####
+
     if document_text :
         #st.session_state['prompt'].append(prompt)
         st.markdown("<h3 style='text-align: center; color: blue;'>Generator Model Response</h3>", unsafe_allow_html=True)
