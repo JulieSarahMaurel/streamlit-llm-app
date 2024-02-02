@@ -5,7 +5,7 @@ import utils
 import vertex
 
 st.set_page_config(
-    page_title=":sparkles: Contract liability predictor :sparkles:",
+    page_title="Contract liability predictor",
     page_icon=":robot:",
     layout="centered",
     initial_sidebar_state="expanded",
@@ -18,14 +18,15 @@ st.set_page_config(
 utils.create_session_state()
 
 
-st.title(":blue[PaLM 2 fine tuned] :blue[Rafa-Stephane-Julie] Contract Liability Predictor")
-
+st.title(":blue[PaLM 2 fine tuned] :blue:sparkles:  The most powerful tool to find Liability in your contracts :sparkles: ")
+st.title("Powered by Rafa-Stephane-Julie")
+ 
 
 
 with st.container():
     st.write("Training database: CUAD ")
-    st.write("Training set size: 492")
-    st.write("Blue and Rouge indicators:0.009235160038433818, 0.24705357752657664")
+    st.write("Training set size: 492 contracts ")
+    st.write("Blue and Rouge indicators:0.009235160038433818,  0.24705357752657664")
     #st.write("Current Generator Settings: ")
     # if st.session_state['temperature'] or st.session_state['debug_mode'] or :
     #st.write ("Temperature: ",st.session_state['temperature']," \t \t Token limit: #",st.session_state['token_limit']
