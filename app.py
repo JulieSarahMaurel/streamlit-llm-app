@@ -62,7 +62,7 @@ def read_docx_and_save(file):
         full_text.append(para.text)
     return "\n".join(full_text)
 
-st.title("Upload and Process DOCX File", type="docx")
+st.title("Upload and Process DOCX File")
 
 uploaded_file = st.file_uploader("Please upload your DOCX file here", type="docx")
 if uploaded_file is not None:
