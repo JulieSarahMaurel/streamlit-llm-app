@@ -10,7 +10,7 @@ vertexai.init(project=PROJECT_ID, location=LOCATION)
 
 @st.cache_resource
 def get_model():
-    generation_model = TextGenerationModel.get_tuned_model("1943547330791735296")
+    generation_model = TextGenerationModel.get_tuned_model("223172273136205824")
     return generation_model
 
 def get_text_generation(prompt="",  **parameters):
